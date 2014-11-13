@@ -1,0 +1,331 @@
+<html>
+	<head>
+		<title>Tupy Sport Club</title> 
+		<meta charset="utf-8">
+		<link href="css/estilo.css" rel="stylesheet">		
+		<script type="text/javascript" src="js/jquery-1.2.6.min.js"></script>
+		<script type="text/javascript">
+			function slideSwitch() {
+				var $active = $('#slideshow IMG.active');
+				if ( $active.length == 0 ) $active = $('#slideshow IMG:last');
+				var $next =  $active.next().length ? $active.next()
+				: $('#slideshow IMG:first');
+				$active.addClass('last-active');        
+				$next.css({opacity: 0.0})
+				.addClass('active')
+				.animate({opacity: 1.0}, 1000, 
+				function() {$active.removeClass('active last-active'); });
+				}
+			$(function() {
+				setInterval( "slideSwitch()", 5000 );
+				});
+		</script>
+	</head>
+	<body>		
+		<div id="container">						
+			<header>
+				<div id="contato">
+					<a href="tupyfaleconosco.htm">
+					<div class="faleconosco">				
+						<div class="faleconoscoimg">				
+							<img src="imagem\mensagem.png"/>		
+						</div>				
+						<div class="faleconoscotxt">								
+							Fale Conosco
+						</div>				
+					</div>
+					</a>
+					<a href="https://twitter.com/SportClubTupy">	
+					<div class="twitter">
+						
+							<div class="twitterimg">
+								<img src="imagem\twitter.png"/>
+							</div>
+							<div class="twittertxt">
+								Faça Parte
+							</div>						
+					</div>			
+					</a>
+				</div>
+				<img src="imagem\titulo.png"/>
+			</header>	
+			<section>			
+				<div id="menu">				
+					<ul>
+						<li><a href="index.htm">Home</a></li>  
+						<li><a href="tupyoclube.htm">O Clube</a></li>
+						<li><a href="tupyprojetos.htm">Projetos</a></li>
+						<li><a href="tupyatividades.htm">Atividades</a></li>
+						<li><a href="tupyescolinhas.htm">Escolinhas</a></li>
+						<li><a href="tupymultimidia.htm">Multimídia</a></li>
+						<li><a href="tupyparceiros.htm">Parceiros</a></li>
+					</ul>				
+				</div>			
+				<div id ="banner">
+					<div id="slideshow">
+						<img src="imagem\slideshow1.jpg" class="active"/>
+						<img src="imagem\slideshow2.jpg"/>
+						<img src="imagem\slideshow3.jpg" class="last-active"/>
+					</div>
+				</div>			
+				<div id ="atividade">
+					<a href="tupyatividades.htm">
+					<div id="ativinter1">
+						<div class="ativinterimg">
+							<img src="imagem\jogador.png"/>
+						</div>
+						<div class="ativintertxt">
+							<div class="ativintertxttit">
+								Atividades<span class="cortit">TUPY</span>
+							</div>
+							<div class="ativintertxtinter">
+								A nova administra do Tupy<br/> 
+								busca uma revigoração do Clube,<br/>
+								com isso traz o planejamento ao<br/> 
+								público interessado em participar<br/> 
+								também desse projeto.
+							</div>
+						</div>
+					</div>	
+					</a>
+					<a href="tupyprojetos.htm">
+					<div id="ativinter2">
+						<div class="ativinter2img">
+						<div class="ativinterimg">
+							<img src="imagem\escudo.png"/>
+						</div>				
+						<div class="ativintertxt">
+							<div class="ativintertxttitcentro">
+								Novo<span class="cortitcentro">TUPY</span>
+							</div>
+							<div class="ativintertxtintercentro">
+								A nova administração do Tupy<br/> 
+								busca uma revigoração do Clube,<br/> 
+								com isso traz o planejamento ao<br/> 
+								público interessado em participar<br/> 
+								também desse projeto.<br/> 
+							</div>
+						</div>
+						</div>
+						<img src="imagem\fundo3.png"/>
+						
+					</div>	
+					</a>
+					<a href="tupyescolinhas.htm">					
+					<div id="ativinter3">
+						<div class="ativinterimg">
+							<img src="imagem\mirim.png"/>				
+						</div>				
+						<div class="ativintertxt">
+							<div class="ativintertxttit">
+								Escolinha<span class="cortit">TUPY</span>
+							</div>
+							<div class="ativintertxtinter">
+								A nova administração do Tupy<br/>
+								busca uma revigoração do clube,<br/>
+								com isso traz o planejamento ao<br/>
+								público interessado em participar<br/>
+								também desse projeto.
+							</div>
+						</div>				
+					</div>
+					</a>
+				</div>
+				<div id ="informacao">				
+					<div id ="novidade">
+					<div class="fixoimagem">
+						<div class ="noticiatit">
+						<span class="footeresqtxtcor">TUPY</span>Novidades
+						</div>
+						<div class="novintertxt">
+						
+						A nova administração do Tupy busca um 
+						crescimento e vigoração do Clube, com 
+						isso traz o planejamento ao público 
+						interessado em participar também desse 
+						projeto.</br></br>
+
+						A nova administração do Tupy busca um 
+						crescimento e vigoração do Clube, com 
+						isso traz o planejamento ao público 
+						interessado em participar também desse 
+						projeto.
+						</div>
+						<a href="tupysejaparceiro.htm">
+						<div class="novinterimg1">
+							<div class="novinterno">
+							<div class="novinteresq">
+							<img src="imagem\parceiro.png"/>
+							</div>
+							<div class="novinterdir">
+							<div class="novtit">
+								<span class="footeresqtxtcor">Seja</span>Parceiro
+							</div>
+							<div class="novtxt">
+								Saiba como ser parceiro do 
+								Tupy Sport Club, participe!
+							</div>
+							</div>
+							</div>
+							<img src="imagem\fundo.png"/>
+						</div>
+						</a>
+						<a href="tupymultimidia.htm">
+						<div class="novinterimg2">
+							
+							<div class="novinterno">
+							<div class="novinteresq">
+							<img src="imagem\galeria.png"/>
+							</div>
+							<div class="novinterdir">
+							<div class="novtit">
+								<span class="footeresqtxtcor">Galeria</span>Multimídia
+							</div>
+							<div class="novtxt">
+								Confira nossa galeria de
+								vídeos e fotos, conheça mais
+								nossa vitoriosa história!
+							</div>
+							</div>
+							</div>
+							
+							<img src="imagem\fundo.png"/>
+						</div>
+						</a>
+						</div>
+						<img src="imagem\fundo2.png"/>
+					</div>
+
+					
+					
+					<div id ="agenda">
+					<div class="fixoimagem">
+						<div class ="noticiatit">
+						<span class="footeresqtxtcor">TUPY</span>Agenda
+						</div>
+						<a href="tupyagenda.htm">
+						
+						<div class="novinterimg1">
+							<div class="novinterno">
+							<div class="novinteresq">
+							<img src="imagem\agenda.png"/>
+							</div>
+							<div class="novinterdir">
+							<div class="novtit">
+								<span class="footeresqtxtcor">Vizualizar</span>Agenda
+							</div>
+							<div class="novtxt">
+								Saiba sobre os jogos e eventos
+								através de nossa agenda.
+							</div>
+							</div>
+							</div>
+							<img src="imagem\fundo.png"/>
+						</div>
+						</a>
+						<div class="agendainterno1">
+						<div class="agendainternotit">
+						Último Jogo
+						</div>
+						<div class="agendainternoplacar">
+						TupySC 4 X 1 Lagense E. C.
+						</div>
+						<div class="agendadata">
+							<img src="imagem\data.png"/><span class="espacoimagem"/>05 de junho / 15h
+							<span class="espacoinfantil"/><img src="imagem\infantil.png"/> Infantil
+						</div>
+						<div class="agendalocal">
+							<img src="imagem\campo.png"/><span class="espacoimagem"/>Local: Campo do Tupy							
+						</div>
+						</div>
+						
+						<div class="agendainterno2">
+						<div class="agendainternotit">
+						<span class="footeresqtxtcor">Próximo Jogo</span>
+						</div>
+						<div class="agendainternoplacar">
+						TupySC X Seropédica F. C.
+						</div>
+						<div class="agendadata">
+							<img src="imagem\data.png"/><span class="espacoimagem"/>29 de novembro / 15h
+							<span class="espacoinfantil2"/><img src="imagem\infantil.png"/> Infantil
+						</div>
+						<div class="agendalocal">
+							<img src="imagem\campo.png"/><span class="espacoimagem"/>Local: Campo do Tupy							
+						</div>
+						</div>
+						
+						
+					</div>
+						<img src="imagem\fundo2.png"/>	
+					</div>		
+
+					
+					<div id ="noticia">
+						<div class="fixoimagem">
+						<div class ="noticiatit">
+						<span class="footeresqtxtcor">TUPY</span>Notícias
+						</div>
+						<div class ="noticiatwitter">
+						<a class="twitter-timeline" href="https://twitter.com/SportClubTupy" data-widget-id="530067188246257664">Tweets de @SportClubTupy</a>
+						<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+						</div>
+						</div>
+						<img src="imagem\fundo2.png"/>	
+					</div>				
+				</div>			
+				<div id ="footer">
+					<div id ="footeresq"> 
+						<div class="footeresqtxt"><span class="footeresqtxtcor">TUPY</span>Patrocinadores</div>
+						<div class="footeresqimg1">
+						<img src="imagem\adidas.png"/>
+						</div>
+						<div class="footeresqimg2">
+						<img src="imagem\bergs.png"/>
+						</div>
+						<div class="footeresqimg3">
+						<img src="imagem\schin.png"/>
+						</div>
+						<div class="footeresqimg4">
+						<img src="imagem\ondas.png"/>
+						</div>
+						
+						
+					</div>
+					<div id ="footerdir"> 
+						<div class="footerdirtxt"><span class="footeresqtxtcor">TUPY</span>Parceiros</div>
+						<div class="footerdirimg1">
+						<img src="imagem\yes.png"/>
+						</div>
+						<div class="footerdirimg2">
+						<img src="imagem\alberis.png"/>
+						</div>
+						<div class="footerdirimg3">
+						<img src="imagem\farma.png"/>
+						</div>
+						<div class="footerdirimg4">
+						<img src="imagem\criativo.png"/>
+						</div>
+						<div class="footerdirimg5">
+						<img src="imagem\nilvon.png"/>
+						</div>
+					
+					</div>
+				</div>
+				<div id ="rodape"> 
+					<div class ="rodapeesq"> 
+					<span class="footeresqtxtcor">∎</span> copyright © Tupy Sport Club - Todos os direitos reservados
+					</div>
+					<div class ="rodapedir"> 
+					<div class="rodapedirxhtml">XHTML</div>
+					<div class="rodapedircss">CSS</div>
+					<div class="rodapedirtxt">
+					<span class="footeresqtxtcor">▶</span> maiscriativo <span class="footeresqtxtcor">▶</span> estatísticas
+					</div>
+					</div>
+				</div>
+				
+			</section>
+		</div>		
+	</body>
+</html>
