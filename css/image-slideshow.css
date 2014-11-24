@@ -1,4 +1,4 @@
-	
+
 	#dhtmlgoodies_slideshow{
 		width:600px;	/* Total width of slideshow */
 
@@ -17,7 +17,7 @@
 		/* CSS HACK */
 		height: 432px;	/* IE 5.x */
 		height/* */:/**/420px;	/* Other browsers */
-		height: /**/380px;
+		height: /**/420px;
 				
 	}
 	#previewPane img{
@@ -75,7 +75,7 @@
 		cursor:pointer;
 		border:0px;
 	}
-	
+
 	#waitMessage{
 		display:none;
 		position:absolute;
